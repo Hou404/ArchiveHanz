@@ -3,5 +3,7 @@ pipeline:
     image: ubuntu
     privileged: true
     commands:
+      - apt update
+      - apt install lvm2 -y
       - ls
 

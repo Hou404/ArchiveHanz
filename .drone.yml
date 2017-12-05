@@ -1,5 +1,7 @@
 pipeline:
   build:
-    image: golang
+    image: ubuntu
+    privileged: true
     commands:
       - ls
+

@@ -12,8 +12,6 @@ pipeline:
     image: robertstettner/drone-codecov
     secrets: [ codecov_token ]
     debug: true
-    commands:
-      - ls
     files:
       - coverage.cov
 

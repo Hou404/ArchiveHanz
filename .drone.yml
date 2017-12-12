@@ -12,5 +12,5 @@ pipeline:
     secrets: [ codecov_token ]
     debug: true
     files:
-      - coverage.cov
+      - coverage.txt
 

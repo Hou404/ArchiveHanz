@@ -7,10 +7,13 @@ pipeline:
       - apt install lvm2 -y
       - lvs
       - ls
+      - mv coverage.txt coverage.cov
   coverage:
     image: robertstettner/drone-codecov
     secrets: [ codecov_token ]
     debug: true
+    commands:
+      - ls
     files:
-      - coverage.txt
+      - coverage.cov
 
